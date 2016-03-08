@@ -1,0 +1,69 @@
+/*
+Theme Name: SmartON
+Author: FourGrafx
+Author URI: http://www.fourgrafxt.com
+Version: 1.0.0
+Description: A Beautiful, Professional and Multipurpose Theme Made by FourGrafx</p>
+---- COLOR CSS DEFAULT
+*/
+
+
+/* Color - text,titles, links etc */
+a, .title-color, .header-top .togglebox a, .contact-info .fa, .sm-default a:hover, .sm-default a:focus, .sm-default a:active, .sm-default a.highlighted,.top-search .toggle-link,.sb-default .service-block-title, .sb-default .service-block-title h2, .accordion.accordion-bordered .accordion-toggle, .accordion.accordion-bordered .accordion-toggle.collapsed:hover, .footer-middle .fa-ul .fa-li, .footer-custom-menu li:before, .light-header h1, .light-header h2, .light-header h3, .single-product .product-price, .post-meta-info a:hover, .meta-author:before, .meta-date:before, .meta-comments:before, .meta-tags:before, #contactForm label.error, #contactForm label.error:before, .work-entry h2,.work-entry h3, .work-entry h4, .work-entry h5, .brands-entry h2,.brands-entry h3, .brands-entry h4, .brands-entry h5, .modal a, blockquote small, .progress-pie-3 .percent, .text-primary, .btn.btn-border.btn-primary, a.list-group-item.active > .badge, .nav-pills > .active > a > .badge, .element h3 {color:#FFBA00;}
+
+/* Link Hover|Focus|Active */
+a:hover, a:focus, a:active, .footer-custom-menu li a:hover {color:#e3aa00;}
+/* Default Background Hover */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {background-color:#e3aa00; }
+
+/* Color - !IMPORTANT */
+.color-default{ color:#FFBA00 !important;}
+
+/* Background Color */
+.staff-member-name, .staff-member-toggle .staff-info, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .btn-primary, .slide-panel-btn, .top-language ul.language-menu li.active,.top-language ul.language-menu li a:hover, .scrollup, .sm-default .sm-nowrap > li > a:hover, .sm-default a.current, .sm-default a.current:hover, .sm-default a.current:focus, .sm-default a.current:active, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .tp-bullets.simplebullets .bullet:hover, .tp-bullets.simplebullets .bullet.selected, .tp-bullets.simplebullets.round .bullet:hover, .tp-bullets.simplebullets.round .bullet.selected, .tp-bullets.simplebullets.navbar .bullet:hover, .tp-bullets.simplebullets.navbar .bullet.selected, .panel-primary > .panel-heading, .panel-primary > .panel-footer, .accordion .accordion-toggle, .accordion .accordion-toggle.collapsed:hover, .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close, .footer-bottom, .rounded-list a:before, .rectangle-list a:before, .noUi-connect, .noUi-handle, .post-format, .related-icon, .comments-icon, .leave-comment-icon, .pagination-carousel a.selected, .label-primary, .selected, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .testimonial-content, .progress-bar, .progress-pie-2 .chart-2, .portfolio-info-toggle {background-color:#FFBA00;}
+
+/* Text Select */
+::-moz-selection {background-color:#FFBA00;}
+::selection {background-color:#FFBA00;}
+
+/* Background Color - !IMPORTANT */
+.bg-color-default, .sm-default a.current, .sb-default:hover .icon-wrapper { background-color:#FFBA00 !important;}
+
+/* Border Color */
+.btn.btn-border.btn-primary, #slide-panel, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus, .border-list a:before, #contactForm .error, .form-control:focus, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .progress-pie-3 .chart-3 canvas, .btn-primary, .panel-primary , .panel-primary > .panel-heading {border-color: #FFBA00;}
+
+/* Border Color !IMPORTANT */
+.service-block.sb-border.sb-default {border-color: #FFBA00 !important;}
+
+/* Special - Complex */
+.tp-bullets.simplebullets.round-old .bullet:hover		{-webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; }
+.tp-bullets.simplebullets.round-old .bullet.selected	{-webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; }
+.tp-bullets.simplebullets.square-old .bullet:hover		{ -webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00;}
+.tp-bullets.simplebullets.square-old .bullet.selected	{ -webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00;}
+.tp-bullets.simplebullets.navbar-old .bullet:hover		{ -webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00;}
+.tp-bullets.simplebullets.navbar-old .bullet.selected		{ -webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00;}
+.tp-bullets.simplebullets.round-old .bullet:hover		{-webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; }
+.tp-bullets.simplebullets.round-old .bullet.selected	{-webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; -moz-box-shadow:  0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FFBA00; }
+
+.flex-control-paging li a.flex-active { background: #FFBA00; background: rgba(227, 170, 0, 0.9); cursor: default; }
+
+.tabs-left .nav-tabs > li.active > a, .tabs-left .nav-tabs > li.active > a:hover, .tabs-left .nav-tabs > li.active > a:focus{border-color: #E5E5E5 #FFFFFF #E5E5E5 #FFBA00 !important;}
+.tabs-right .nav-tabs > li.active > a, .tabs-right .nav-tabs > li.active > a:hover, .tabs-right .nav-tabs > li.active > a:focus{border-color: #E5E5E5 #FFBA00 #E5E5E5 #ffffff !important;}
+.tabs-bottom .nav-tabs > li.active > a, .tabs-bottom .nav-tabs > li.active > a:hover, .tabs-bottom .nav-tabs > li.active > a:focus{border-color: #e5e5e5 #E5E5E5 #FFBA00 #E5E5E5 !important;}
+@media (min-width: 768px) {
+.tabs-bottom .nav-tabs > li.active > a, .tabs-bottom .nav-tabs > li.active > a:hover, .tabs-bottom .nav-tabs > li.active > a:focus{border-color: #ffffff #E5E5E5 #FFBA00 #E5E5E5 !important;}
+}
+
+.rectangle-list a:hover:after{border-left-color: #FFBA00;}
+.border-list a:hover:after{border-left-color: #FFBA00;}
+
+.map-overlay {background-color:rgba(227, 170, 0, 0.8);}
+
+.testimonial-content:after { border-top-color: #FFBA00; border-width: 10px; left: 50px; margin-left: -10px; }
+
+.cart-table{border-top:5px solid #FFBA00;}
+
+.list_carousel a.prev, .list_carousel a.next {background-color:rgba(227, 170, 0, 0.6);}
+.list_carousel a.prev.disabled, .list_carousel a.next.disabled {background-color:rgba(227, 170, 0, 0.6);}
+.list_carousel a.prev:hover {background-color:rgba(227, 170, 0, 1);}
+.list_carousel a.next:hover {background-color:rgba(227, 170, 0, 1);}
