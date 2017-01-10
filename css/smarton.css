@@ -987,7 +987,7 @@ html[xmlns] .slides {display: block;}
 ********************************/
 
 .container{}
-.container-inner{ padding-top:50px; padding-bottom:50px;}
+.container-inner{ padding-top:50px; padding-bottom:25px;}
 
 /* Spacers and Horizontal Rulers*/
 .blank-spacer{ min-height:1px; float:none; clear:both;}
