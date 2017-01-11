@@ -67,6 +67,7 @@
 	};
 
 	$.SmartMenus = function(elm, options) {
+/*
 		this.$root = $(elm);
 		this.opts = options;
 		this.$subArrow = null;
@@ -82,7 +83,8 @@
 		this.$firstSub = null; // at runtime so we'll cache them
 		this.disabled = false;
 		this.$disableOverlay = null;
-		// this.init();
+		this.init();
+*/
 	};
 
 	$.extend($.SmartMenus, {
