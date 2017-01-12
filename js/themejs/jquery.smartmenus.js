@@ -64,10 +64,9 @@
 			$(document).unbind('.smartmenus_mouse');
 			mouseDetectionEnabled = false;
 		}
-	};
+	}
 
 	$.SmartMenus = function(elm, options) {
-/*
 		this.$root = $(elm);
 		this.opts = options;
 		this.$subArrow = null;
@@ -84,7 +83,6 @@
 		this.disabled = false;
 		this.$disableOverlay = null;
 		this.init();
-*/
 	};
 
 	$.extend($.SmartMenus, {
