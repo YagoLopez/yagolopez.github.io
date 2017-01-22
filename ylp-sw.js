@@ -11,7 +11,6 @@ var filesToCache = [
   'contacto-iframe.html',
   'manifest.json',
   'ylp-sw.js',
-  'js/cache-polyfill.js',
   'favicon.ico',
 
   // css
