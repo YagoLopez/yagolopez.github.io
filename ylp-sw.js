@@ -52,7 +52,7 @@ var filesToCache = [
 
 // todo: check if service worker is installed before
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('ylp-sw.js').then(function(reg) {
+  navigator.serviceWorker.register('ylp-sw.js').then(function() {
     console.log('sw: registration ok');
   }).catch(function(err) {
     console.error(err);
