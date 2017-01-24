@@ -1,7 +1,7 @@
-# Yago López Salvador. Portafolio Profesional
+# Yago LÃ³pez Salvador. Portafolio Profesional
 
-Recopilación de conocimientos y experiencia en ingeniería del software
+RecopilaciÃ³n de conocimientos y experiencia en ingenierÃ­a del software
 
 Sitio web personal
 
-<a href="http://yagolopez.github.io" target="_blank">VER ONLINE</a>
+<a href="https://yagolopez.github.io" target="_blank">VER ONLINE</a>

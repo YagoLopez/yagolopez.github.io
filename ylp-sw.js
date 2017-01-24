@@ -5,6 +5,8 @@ var cacheName = 'ylp';
 
 var filesToCache = [
 
+  // infrastructure
+  '/',
   'index.html',
   'proyectos.html',
   'contacto.html',
@@ -12,6 +14,7 @@ var filesToCache = [
   'manifest.json',
   'ylp-sw.js',
   'favicon.ico',
+  'img/theme/offline-img.png',
 
   // css
   '/css/bootstrap.min.css',
@@ -21,8 +24,7 @@ var filesToCache = [
   '/css/themecss/lightbox.css',
 
   // fonts
-  '/fonts/font-awesome/css/font-awesome.css',
-  '/fonts/font-awesome/css/fontawesome-webfont.woff2',
+  '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css',
   '/fonts/google/raleway.css',
   '/fonts/google/1.woff2',
   '/fonts/google/2.woff2',
@@ -47,10 +49,11 @@ var filesToCache = [
   '/img/demo/parallax-back2.jpg',
   '/img/screens/ml/ml-logo-big.png',
   '/img/screens/wca/portada.png',
-  '/img/screens/bf/bf0rect.png'
+  '/img/screens/bf/bf0rect.png',
+  '/img/screens/sd/88.jpg'
+
 ];
 
-// todo: check if service worker is installed before
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('ylp-sw.js').then(function() {
     console.log('sw: registration ok');
@@ -60,7 +63,6 @@ if ('serviceWorker' in navigator) {
 }
 
 // install (write) files to cache
-// todo: check if files are installed before
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
@@ -75,13 +77,11 @@ self.addEventListener('fetch', function(event) {
     // test if the request is cached
     caches.match(event.request).then(function(response) {
       // console.log('sw: feching file from cache: ', event.request.url);
-      // 1) if request cached: return response from cache (fetch(event.request) or
-      // 2) passes request unaltered to the browser to make an usual network request
       return response || fetch(event.request);
     }).catch(function (err) {
-      // if request is not cached and  network is unavailable, return to index by default
-      console.log(err);
-      return caches.match('index.html');
+      // if request is not cached and  network is unavailable, return this image by default
+      console.info(err, 'loading default image');
+      return caches.match('img/theme/offline-img.png');
     })
   )
 });
