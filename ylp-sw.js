@@ -24,7 +24,7 @@ var filesToCache = [
   '/css/themecss/lightbox.css',
 
   // fonts
-  '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css',
+  'http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
   '/fonts/google/raleway.css',
   '/fonts/google/1.woff2',
   '/fonts/google/2.woff2',
