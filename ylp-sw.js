@@ -25,7 +25,7 @@ var filesToCache = [
 
   // fonts
   '/fonts/font-awesome.min.css',
-  '/fonts/fontawesome-webfont.woff2?v=4.7.0',  
+  '/fonts/fontawesome-webfont.woff2?v=4.7.0',
   '/fonts/google/raleway.css',
   '/fonts/google/1.woff2',
   '/fonts/google/2.woff2',
@@ -52,7 +52,6 @@ var filesToCache = [
   '/img/screens/wca/portada.png',
   '/img/screens/bf/bf0rect.png',
   '/img/screens/sd/88.jpg'
-
 ];
 
 if ('serviceWorker' in navigator) {
