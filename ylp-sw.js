@@ -25,7 +25,7 @@ var filesToCache = [
 
   // fonts
   '/fonts/font-awesome.min.css',
-  '/fonts/font-awesome-webfont.woff2',
+  '/fonts/fontawesome-webfont.woff2?v=4.7.0',  
   '/fonts/google/raleway.css',
   '/fonts/google/1.woff2',
   '/fonts/google/2.woff2',
