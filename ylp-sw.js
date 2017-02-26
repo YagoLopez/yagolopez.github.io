@@ -18,14 +18,14 @@ var filesToCache = [
 
   // css
   '/css/bootstrap.min.css',
-  // '/css/font-awesome.min.css',
   '/css/smarton.css',
   '/css/colors/color-default.css',
   '/css/themecss/animate.css',
   '/css/themecss/lightbox.css',
 
   // fonts
-  // '/fonts/fontawesome-webfont.woff2?v=4.7.0',
+  '/fonts/fontawesome-webfont.woff2?v=4.7.0',
+  '/font/font-awesome.min.css',
   '/fonts/google/raleway.css',
   '/fonts/google/1.woff2',
   '/fonts/google/2.woff2',
