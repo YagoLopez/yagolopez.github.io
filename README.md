@@ -6,5 +6,5 @@ Sitio web personal
 
 <a href="https://yagolopez.github.io" target="_blank">VER ONLINE</a>
 
-With the colaboration of:
-<div><a href="https://www.browserstack.com/" target="_blank"><img src="browserstack-logo.png" width="150px"></a></div>
+<div>With the colaboration of:</div>
+<a href="https://www.browserstack.com/" target="_blank"><img src="browserstack-logo.png" height="90px"></a>
