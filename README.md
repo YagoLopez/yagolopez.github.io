@@ -7,6 +7,8 @@ Sitio web personal
 <a href="https://yagolopez.github.io" target="_blank">VER ONLINE</a>
 
 <div>With the colaboration of: </div>
-<div><a href="https://www.browserstack.com/" target="_blank"><img src="browserstack-logo.png" height="90px"></a></div>
 
-<div><a href="https://js.org" target="_blank" title="JS.ORG | JavaScript Community"><img src="https://logo.js.org/dark_horz.png" width="102" alt="JS.ORG Logo"></a></div>
+<div>
+<a href="https://www.browserstack.com/" target="_blank"><img src="browserstack-logo.png" height="90px"></a>&nbsp;
+<a href="https://js.org" target="_blank" title="JS.ORG | JavaScript Community"><img src="https://logo.js.org/bright_horz.png" width="102" alt="JS.ORG Logo"></a>
+</div>
