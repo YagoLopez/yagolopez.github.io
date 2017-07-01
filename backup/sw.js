@@ -14,7 +14,7 @@ var filesToCache = [
   'favicon.ico',
 
   // css
-  '/css/bootstrap.min.css',
+  '/css/bootstrap-3.0.3.min.css',
   '/css/smarton.css',
   '/css/colors/color-default.css',
   '/css/themecss/animate.css',
