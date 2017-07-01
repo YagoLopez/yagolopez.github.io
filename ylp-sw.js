@@ -22,6 +22,7 @@ var filesToCache = [
   '/css/colors/color-default.css',
   '/css/themecss/animate.css',
   '/css/themecss/lightbox.css',
+  '/css/custom.css',
 
   // fonts
   '/fonts/fontawesome-webfont.woff2?v=4.7.0',
@@ -51,7 +52,8 @@ var filesToCache = [
   '/img/screens/ml/ml-logo-big.png',
   '/img/screens/wca/portada.png',
   '/img/screens/bf/bf0rect.png',
-  '/img/screens/sd/88.jpg'
+  '/img/screens/sd/88.jpg',
+  '/img/ng-dashboard/about9-min.jpg'
 ];
 
 if ('serviceWorker' in navigator) {
