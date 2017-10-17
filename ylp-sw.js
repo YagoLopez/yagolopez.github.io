@@ -58,11 +58,13 @@ var filesToCache = [
 ];
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('ylp-sw.js').then(function() {
-    console.log('sw: registration ok');
+  navigator.serviceWorker.register('ylp-sw.js', {scope: './'}).then(function(registration) {
+    console.log('sw: registration ok', registration);
   }).catch(function(err) {
     console.error(err);
   });
+} else {
+  console.warn('sw: not supported');
 }
 
 // install (write) files to cache
