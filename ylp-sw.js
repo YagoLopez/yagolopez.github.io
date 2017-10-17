@@ -17,7 +17,7 @@ var filesToCache = [
   'img/theme/offline-img.png',
 
   // css
-  '/css/bootstrap.min.css',
+  '/css/bootstrap-3.0.3.min.css',
   '/css/smarton.css',
   '/css/colors/color-default.css',
   '/css/themecss/animate.css',
@@ -26,7 +26,7 @@ var filesToCache = [
 
   // fonts
   '/fonts/fontawesome-webfont.woff2?v=4.7.0',
-  '/font/font-awesome.min.css',
+  '/fonts/font-awesome.min.css',
   '/fonts/google/raleway.css',
   '/fonts/google/1.woff2',
   '/fonts/google/2.woff2',
@@ -35,8 +35,8 @@ var filesToCache = [
 
   // js
   '/js/jquery/jquery-2.2.4.min.js',
-  '/js/themejs/jquery.smartmenus.js',
-  '/js/bootstrap.min.js',
+  '/js/bootstrap-3.0.3.min.js',
+  '/js/themejs/jquery.smartmenus.min.js',
   '/js/themejs/SmoothScroll.js',
   '/js/themejs/jquery.waypoints.min.js',
   '/js/themejs/application.js',
@@ -53,7 +53,8 @@ var filesToCache = [
   '/img/screens/wca/portada.png',
   '/img/screens/bf/bf0rect.png',
   '/img/screens/sd/88.jpg',
-  '/img/ng-dashboard/about9-min.jpg'
+  '/img/screens/ngdashboard/about9-min.jpg',
+  'browserstack-logo.png'
 ];
 
 if ('serviceWorker' in navigator) {
@@ -78,8 +79,15 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     // test if the request is cached
     caches.match(event.request).then(function(response) {
-      // console.log('sw: feching file from cache: ', event.request.url);
-      return response || fetch(event.request);
+      console.log('sw: feching file from cache: ', event.request.url);
+      // return response || fetch(event.request);
+      if(response) {
+        return response;
+      } else {
+        return fetch(event.request).then(function (response) {
+          return response;
+        });
+      }
     }).catch(function (err) {
       // if request is not cached and  network is unavailable, return this image by default
       console.info(err, 'loading default image');
