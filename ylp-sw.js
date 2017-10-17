@@ -59,7 +59,7 @@ var filesToCache = [
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('ylp-sw.js', {scope: './'}).then(function(registration) {
-    console.log('sw: registration ok', registration);
+    console.log('sw: registration ok');
   }).catch(function(err) {
     console.error(err);
   });
