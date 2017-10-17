@@ -63,8 +63,6 @@ if ('serviceWorker' in navigator) {
   }).catch(function(err) {
     console.error(err);
   });
-} else {
-  console.warn('sw: not supported');
 }
 
 // install (write) files to cache
@@ -77,21 +75,14 @@ self.addEventListener('install', function(event) {
   )
 });
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
+self.addEventListener('fetch', function(fetchEvent) {
+  fetchEvent.respondWith(
     // test if the request is cached
-    caches.match(event.request).then(function(response) {
-      console.log('sw: feching file from cache: ', event.request.url);
-      // return response || fetch(event.request);
-      if(response) {
-        return response;
-      } else {
-        return fetch(event.request).then(function (response) {
-          return response;
-        });
-      }
+    caches.match(fetchEvent.request).then(function(response) {
+      console.log('sw: feching file from cache: ', fetchEvent.request.url);
+      return response || fetch(fetchEvent.request);
     }).catch(function (err) {
-      // if request is not cached and  network is unavailable, return this image by default
+      // if request is not cached and network is unavailable, return this image by default
       console.info(err, 'loading default image');
       return caches.match('img/theme/offline-img.png');
     })
