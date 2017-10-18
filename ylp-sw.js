@@ -75,8 +75,6 @@ self.addEventListener('install', function(event) {
   )
 });
 
-// Note: 'Activate' event is for deleting older files
-
 self.addEventListener('fetch', function(fetchEvent) {
   fetchEvent.respondWith(
     // test if the request is cached
@@ -90,6 +88,8 @@ self.addEventListener('fetch', function(fetchEvent) {
     })
   )
 });
+
+// Note: 'activate' event is for deleting older files
 
 
 
