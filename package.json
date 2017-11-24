@@ -1,0 +1,38 @@
+{
+  "name": "yago-lopez-personal-portfolio",
+  "version": "1.0.0",
+  "description": "Yago Lopez. Website and Personal Portfolio",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "serve": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YagoLopez/yagolopez.github.io.git"
+  },
+  "keywords": [
+    "yago",
+    "lopez",
+    "curriculum",
+    "vitae",
+    "curriculum",
+    "vitae",
+    "portfolio",
+    "software",
+    "engineer",
+    "senior",
+    "engineer",
+    "yago",
+    "lopez"
+  ],
+  "author": "Yago Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YagoLopez/yagolopez.github.io/issues"
+  },
+  "homepage": "https://github.com/YagoLopez/yagolopez.github.io#readme"
+}

@@ -1,13 +1,3 @@
-/*
-Theme Name: SmartON
-Author: FourGrafx
-Author URI: http://www.fourgrafxt.com
-Version: 1.0.0
-Description: A Beautiful, Professional and Multipurpose Theme Made by FourGrafx</p>
----- COLOR CSS DEFAULT
-*/
-
-
 /* Color - text,titles, links etc */
 a, .title-color, .header-top .togglebox a, .contact-info .fa, .sm-default a:hover, .sm-default a:focus, .sm-default a:active, .sm-default a.highlighted,.top-search .toggle-link,.sb-default .service-block-title, .sb-default .service-block-title h2, .accordion.accordion-bordered .accordion-toggle, .accordion.accordion-bordered .accordion-toggle.collapsed:hover, .footer-middle .fa-ul .fa-li, .footer-custom-menu li:before, .light-header h1, .light-header h2, .light-header h3, .single-product .product-price, .post-meta-info a:hover, .meta-author:before, .meta-date:before, .meta-comments:before, .meta-tags:before, #contactForm label.error, #contactForm label.error:before, .work-entry h2,.work-entry h3, .work-entry h4, .work-entry h5, .brands-entry h2,.brands-entry h3, .brands-entry h4, .brands-entry h5, .modal a, blockquote small, .progress-pie-3 .percent, .text-primary, .btn.btn-border.btn-primary, a.list-group-item.active > .badge, .nav-pills > .active > a > .badge, .element h3 {color:#20A5E8;}
 

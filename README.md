@@ -4,7 +4,7 @@ Recopilación de conocimientos y experiencia en ingeniería del software.
 
 Sitio web personal
 
-<a href="https://yagolopez.github.io" target="_blank">VER ONLINE</a>
+<a href="https://yagolopez.js.org" target="_blank">VER ONLINE</a>
 
 <div>Con la colaboración de: </div>
 <br>
