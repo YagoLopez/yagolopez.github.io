@@ -1,5 +1,9 @@
 //todo: añadir iconos en manifest.json para poder que aprarezca la notificacion en android (como en wca)
 
+if( 'undefined' === typeof window){
+  importScripts('uris.js');
+}
+
 var CACHE_NAME = 'yl-portfolio';
 
 // Urls containing strings in whitelist will be bypassed by the service worker. They wont be served through the sw.
@@ -23,7 +27,6 @@ if ('serviceWorker' in navigator) {
  *
  */
 self.addEventListener('install', function(event) {
-  importScripts('uris.js');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
@@ -151,7 +154,4 @@ self.addEventListener('fetch', function(fetchEvent) {
   )
 });
 
-// if( 'undefined' === typeof window){
-//   importScripts('uris.js');
-// }
 
