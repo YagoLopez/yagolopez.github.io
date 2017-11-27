@@ -1,6 +1,6 @@
 var URIS_TO_CACHE = [
 
-  // infrastructure
+  // app shell
   'index.html',
   'proyectos.html',
   'contacto.html',
@@ -48,5 +48,6 @@ var URIS_TO_CACHE = [
   '/img/screens/bf/bf0rect.png',
   '/img/screens/sd/88.jpg',
   '/img/screens/ngdashboard/about9-min.jpg',
+  '/img/theme/js-org-logo.png',
   'browserstack-logo.png'
 ]
