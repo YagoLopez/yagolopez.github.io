@@ -1,7 +1,6 @@
 var URIS_TO_CACHE = [
 
   // infrastructure
-  '/',
   'index.html',
   'proyectos.html',
   'contacto.html',

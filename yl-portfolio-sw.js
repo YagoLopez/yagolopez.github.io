@@ -12,7 +12,7 @@ var WHITE_LIST = [];
  * Service worker registration
  */
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('yl-portfolio-sw.js').then(function(registration) {
+  navigator.serviceWorker.register('yl-portfolio-sw.js', {scope: '/'}).then(function(registration) {
     // console.log('sw: registration ok, scope: ', registration.scope);
   }).catch(function(err) {
     console.error(err);
@@ -67,6 +67,50 @@ var isInWhiteList = function (url) {
   }
 }
 /** --------------------------------------------------------------------------------------------------------------------
+ * Finds out if is image request
+ * @param fetchEvent
+ * @returns {boolean}
+ */
+var isImageRequest = function (fetchEvent) {
+  var request = fetchEvent.request;
+  var url = request.url;
+  var headers = request.headers;
+  var result = false;
+  Array.from(headers.entries()).forEach(function (entry) {
+    if (entry[1] === 'image/webp,image/*,*/*;q=0.8'){
+      // console.info('url image request: ' + url);
+      // console.log(entry[0]+ ': ' + entry[1]);
+      result = true;
+    }
+  });
+  return result;
+}
+/** --------------------------------------------------------------------------------------------------------------------
+ * Finds out if is html request
+ * @param fetchEvent
+ * @returns {boolean}
+ */
+var isHtmlRequest = function (fetchEvent) {
+  var request = fetchEvent.request;
+  var url = request.url;
+  var headers = request.headers;
+  var result = false;
+  Array.from(headers.entries()).forEach(function (entry) {
+    if (entry[1].indexOf('text/html') > -1){
+      // console.info('html url request: ' + url);
+      // console.log(entry[0]+ ': ' + entry[1]);
+      result = true;
+    }
+  });
+  return result;
+}
+/** --------------------------------------------------------------------------------------------------------------------
+ * Finds out if the browser is in onLine mode
+ */
+var isOnline = function () {
+  return navigator.onLine
+}
+/** --------------------------------------------------------------------------------------------------------------------
  * 'Fetch' event. Browser tries to get resources making a request
  *
  * @param {string} Event name ('fetch')
@@ -76,15 +120,12 @@ var isInWhiteList = function (url) {
 self.addEventListener('fetch', function(fetchEvent) {
   var request = fetchEvent.request;
   var url = request.url;
-  // todo: Refactorizar las peticiones a imagenes para evitar ser controladas por el service worker
-  // todo: averiguar si se esta offline
 
-  if (isInWhiteList(url)) {
+  if (isOnline() && isImageRequest(fetchEvent)) {
     return;
   }
 
   fetchEvent.respondWith(
-    // test if the request is cached
     caches.match(request)
       .then(function(response) {
         if(response){
@@ -92,15 +133,23 @@ self.addEventListener('fetch', function(fetchEvent) {
           // console.log('request is cached: ', fetchEvent.request.url);
           return response;
         } else {
-          // 2) if request is not cached, fetch response from network
+          // 2) if request is not cached, to fetch response from network
           // console.log('request is not cached: ', fetchEvent.request.url);
-          return fetch(request /* ,{mode: 'no-cors'} */)
+          return fetch(request /*,{mode: 'no-cors'} */)
         }
       })
       .catch(function (error) {
-        // if request is not cached nor network available, return fallback resource
-        // console.log('caches.match() error: ', error);
-        return caches.match('img/theme/offline-img.png');
+        var result;
+        // console.error('Request not found in cache', error);
+        if (isHtmlRequest(fetchEvent)) {
+          // if request is not cached nor network available and is html request, return fallback html page
+          result = caches.match('/index.html');
+        }
+        if (isImageRequest(fetchEvent)) {
+          // if request is not cached nor network available and is image request, return fallback image
+          result = caches.match('img/theme/offline-img.png');
+        }
+        return result;
       })
   )
 });
