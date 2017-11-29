@@ -7,7 +7,7 @@ if( 'undefined' === typeof window){
 var CACHE_NAME = 'yl-portfolio';
 
 // Urls containing strings in whitelist will be bypassed by the service worker. They wont be served through the sw.
-var WHITE_LIST = ['wewebcams', 'openweather', 'meteociel', 'meteogram', 'googleapis'];
+var WHITE_LIST = ['wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'googleapis'];
 
 /** --------------------------------------------------------------------------------------------------------------------
  * Service worker registration
