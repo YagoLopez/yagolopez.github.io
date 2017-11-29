@@ -7,7 +7,7 @@ if( 'undefined' === typeof window){
 var CACHE_NAME = 'yl-portfolio';
 
 // Urls containing strings in whitelist will be bypassed by the service worker. They wont be served through the sw.
-var WHITE_LIST = [];
+var WHITE_LIST = ['wewebcams', 'openweather', 'meteociel', 'meteogram', 'googleapis'];
 
 /** --------------------------------------------------------------------------------------------------------------------
  * Service worker registration
@@ -121,9 +121,13 @@ self.addEventListener('fetch', function(fetchEvent) {
   var request = fetchEvent.request;
   var url = request.url;
 
-  if (isOnline() && isImageRequest(fetchEvent)) {
+  // Urls in white list are not processed by service worker in online mode
+  if (isOnline() && isInWhiteList(url)) {
     return;
   }
+  // if (isOnline() && isImageRequest(fetchEvent)) {
+  //   return;
+  // }
 
   fetchEvent.respondWith(
     caches.match(request)
