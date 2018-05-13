@@ -8,3 +8,21 @@
 .front-end-content {margin-top: 70px}
 .back-end-content {margin-top: 20px}
 .radius4 {border-radius: 4px}
+@media screen and (max-width: 700px) {
+  .container-manifest {
+    width: 100% !important;
+  }
+}
+.container-manifest {
+  width: 65%;
+}
+.metaphasejs-img {
+  width: 335px; background: rgba(239,239,251,0.83); padding: 25px
+}
+.manifest-title {
+  margin-bottom: 0;
+}
+
+.gray {
+  color: grey !important;
+}
