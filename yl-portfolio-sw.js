@@ -1,4 +1,7 @@
 //todo: añadir iconos en manifest.json para poder que aprarezca la notificacion en android (como en wca)
+/** --------------------------------------------------------------------------------------------------------------------
+ * Initialization
+ */
 
 if( 'undefined' === typeof window){
   importScripts('uris.js');
@@ -6,8 +9,8 @@ if( 'undefined' === typeof window){
 
 var CACHE_NAME = 'yl-portfolio';
 
-// Urls containing strings in whitelist will be bypassed by the service worker. They wont be served through the sw.
-var WHITE_LIST = ['wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'googleapis'];
+// Urls containing strings in whitelist will be bypassed by the service worker. They wont be served by the SW.
+var WHITE_LIST = ['meteoblue', 'wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'googleapis'];
 
 /** --------------------------------------------------------------------------------------------------------------------
  * Service worker registration
@@ -20,7 +23,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 /** --------------------------------------------------------------------------------------------------------------------
- * 'Install' event. Writing files to browser cache
+ * 'Install' event. Write files to browser cache
  *
  * @param {string} Event name ('install')
  * @param {function} Callback function with event data
@@ -65,9 +68,9 @@ var isInWhiteList = function (url) {
       return true;
     }
   }
-}
+};
 /** --------------------------------------------------------------------------------------------------------------------
- * Finds out if is image request
+ * Finds out if image request it content-type 'image'
  * @param fetchEvent
  * @returns {boolean}
  */
@@ -84,7 +87,7 @@ var isImageRequest = function (fetchEvent) {
     }
   });
   return result;
-}
+};
 /** --------------------------------------------------------------------------------------------------------------------
  * Finds out if is html request
  * @param fetchEvent
@@ -103,13 +106,13 @@ var isHtmlRequest = function (fetchEvent) {
     }
   });
   return result;
-}
+};
 /** --------------------------------------------------------------------------------------------------------------------
  * Finds out if the browser is in onLine mode
  */
 var isOnline = function () {
   return navigator.onLine
-}
+};
 /** --------------------------------------------------------------------------------------------------------------------
  * 'Fetch' event. Browser tries to get resources making a request
  *
@@ -150,7 +153,7 @@ self.addEventListener('fetch', function(fetchEvent) {
           result = caches.match('/index.html');
         }
         if (isImageRequest(fetchEvent)) {
-          // if request is not cached nor network available and is image request, return fallback image
+          // if request is not cached nor network available and it s image request, return fallback image
           result = caches.match('img/theme/offline-img.png');
         }
         return result;

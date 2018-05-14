@@ -3,6 +3,7 @@ var URIS_TO_CACHE = [
   // app shell
   'index.html',
   'proyectos.html',
+  'manifiesto.html',
   'contacto.html',
   'contacto-iframe.html',
   'manifest.json',
@@ -50,4 +51,4 @@ var URIS_TO_CACHE = [
   '/img/screens/ngdashboard/about9-min.jpg',
   '/img/theme/js-org-logo.png',
   'browserstack-logo.png'
-]
+];
