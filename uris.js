@@ -7,7 +7,7 @@ var URIS_TO_CACHE = [
   'contacto.html',
   'contacto-iframe.html',
   'manifest.json',
-  'yl-portfolio-sw.js',
+  'yagolopez-root-sw.js',
   'favicon.ico',
   'img/theme/offline-img.png',
 

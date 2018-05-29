@@ -10,13 +10,13 @@ if( 'undefined' === typeof window){
 var CACHE_NAME = 'yl-portfolio';
 
 // Urls containing strings in whitelist will be bypassed by the service worker. They wont be served by the SW.
-var WHITE_LIST = ['meteoblue', 'wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'googleapis'];
+var WHITE_LIST = ['wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'googleapis'];
 
 /** --------------------------------------------------------------------------------------------------------------------
  * Service worker registration
  */
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('yl-portfolio-sw.js', {scope: '/'}).then(function(registration) {
+  navigator.serviceWorker.register('yagolopez-root-sw.js', {scope: '/'}).then(function(registration) {
     // console.log('sw: registration ok, scope: ', registration.scope);
   }).catch(function(err) {
     console.error(err);

@@ -120,7 +120,7 @@ var ignoreUrlParametersMatching = [/^utm_/];
 
 // Service worker registration
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('yl-portfolio-sw.js').then(function() {
+  navigator.serviceWorker.register('yagolopez-root-sw.js').then(function() {
     console.log('sw: registration ok');
   }).catch(function(err) {
     console.error('sw: registration failed ', err);
