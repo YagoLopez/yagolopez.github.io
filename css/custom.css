@@ -26,3 +26,7 @@
 .gray {
   color: grey !important;
 }
+.title-manifest {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
