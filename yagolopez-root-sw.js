@@ -1,4 +1,4 @@
-//todo: añadir iconos en manifest.json para poder que aprarezca la notificacion en android (como en wca)
+//todo: añadir iconos en manifest.json para que aprarezca la notificacion en android (como en wca)
 /** --------------------------------------------------------------------------------------------------------------------
  * Initialization
  */
