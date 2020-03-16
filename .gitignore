@@ -2,4 +2,3 @@ node_modules
 bower_components
 
 *.db
-/img/screens/vue-practice/vue.png
