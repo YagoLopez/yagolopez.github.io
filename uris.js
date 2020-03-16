@@ -49,6 +49,7 @@ var URIS_TO_CACHE = [
   '/img/screens/bf/bf0rect.png',
   '/img/screens/sd/88.jpg',
   '/img/screens/ngdashboard/about9-min.jpg',
+  'img/screens/vue-practice/vue.png',
   '/img/theme/js-org-logo.png',
   'browserstack-logo.png'
 ];
