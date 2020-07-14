@@ -1,7 +1,5 @@
 # Yago López Salvador. Portafolio Profesional. Código fuente.
 
-Recopilación de conocimientos y experiencia en ingeniería del software.
-
 Sitio web personal
 
 <a href="https://yagolopez.js.org" target="_blank">VER ONLINE</a>
