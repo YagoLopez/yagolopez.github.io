@@ -7,7 +7,7 @@ if( 'undefined' === typeof window){
   importScripts('uris.js');
 }
 
-var CACHE_NAME = 'yl-portfolio';
+var CACHE_NAME = 'yago-lopez-website-cache-v2';
 
 // Urls containing strings in whitelist will be bypassed by the service worker. They wont be served by the SW.
 var WHITE_LIST = ['wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'googleapis'];
