@@ -1,0 +1,17 @@
+COURSERA MACHINE LEARNING
+
+- Logistic Regression
+- Artificial Neural Network
+- Machine Learning Algorithms
+- Machine Learning Theory
+- Calificación obtenida: 92.72%
+- Fecha: 15 de julio de 2018
+
+NEURAL NETWORKS AND DEEP LEARNING
+
+- Artificial Neural Networks
+- Back Propagation Theory
+- Phython Programming
+- Deep Learning Theory
+- Calificación obtenida: 93.60%
+- Fecha: 4 de mayo de 2018

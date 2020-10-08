@@ -10,7 +10,7 @@ var filesToCache = [
   'proyectos.html',
   'contacto.html',
   'contacto-iframe.html',
-  'favicon.ico',
+  'favicon.png',
 
   // css
   '/css/bootstrap.min.css',

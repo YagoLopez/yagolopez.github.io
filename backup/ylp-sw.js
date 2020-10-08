@@ -32,7 +32,7 @@ var precacheConfig = [
 ["css/themecss/lightbox.css", "35599c20102e4c2de1ad67b63e822e92"], 
 ["css/themecss/portfolio.css", "80beec15e082bb2e77a5ba36409d77c7"], 
 // ["css/themecss/revolution-slider.css", "59bd5294d75e06713233375e3a9ed976"],
-["favicon.ico", "58caa1fe47aa57d516963dfba40e05e7"], 
+["favicon.png", "58caa1fe47aa57d516963dfba40e05e7"],
 ["fonts/font-awesome/css/FontAwesome.otf", "87d8ca3ddc57e7d2da6226e480f90457"], 
 ["fonts/font-awesome/css/font-awesome.css", "ce7ddce81f9348ce54bec3b9202e93f0"], 
 ["fonts/font-awesome/css/font-awesome.min.css", "4fbd15cb6047af93373f4f895639c8bf"],

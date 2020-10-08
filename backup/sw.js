@@ -11,7 +11,7 @@ var filesToCache = [
   'proyectos.html',
   'contacto.html',
   'contacto-iframe.html',
-  'favicon.ico',
+  'favicon.png',
 
   // css
   '/css/bootstrap-3.0.3.min.css',
