@@ -3,6 +3,7 @@ var URIS_TO_CACHE = [
   // app shell
   'index.html',
   'proyectos.html',
+  'titulos.html',
   'manifiesto.html',
   'contacto.html',
   'contacto-iframe.html',
@@ -51,5 +52,16 @@ var URIS_TO_CACHE = [
   '/img/screens/ngdashboard/about9-min.jpg',
   'img/screens/vue-practice/vue.png',
   '/img/theme/js-org-logo.png',
-  'browserstack-logo.png'
+  '/browserstack-logo.png',
+  '/img/favicon/apple-icon-144x144-dunplab-808.png',
+  '/titulos/machine-learning.jpg',
+  '/titulos/deep-learning.png',
+  '/titulos/react.png',
+  '/titulos/angular.jpg',
+  '/titulos/node.jpg',
+  '/titulos/typescript.jpg',
+  '/titulos/anti-money-laundering.png',
+  '/titulos/responsible-gaming.png',
+  '/titulos/security-awarness.png',
+  '/titulos/phishing-special.png'
 ];

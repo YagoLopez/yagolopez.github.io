@@ -1,11 +1,79 @@
 {
-  "short_name": "Yago López",
-  "name": "Yago López. Portafolio Profesional",
-  "start_url": ".",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#2196F3",
-  "icons": [
-    {"src": "ico/apple-touch-icon-144-precomposed.png", "sizes": "144x144", "type": "image/png"}
-  ]
+	"short_name": "Yago Lopez's Website",
+	"name": "Yago Lopez's Website",
+	"lang": "es",
+	"start_url": ".",
+	"background_color": "#00aae7",
+	"theme_color": "#00aae7",
+	"dir": "ltr",
+	"display": "standalone",
+	"orientation": "any",
+	"icons": [
+		{
+			"src": "/img/favicon/android-icon-192x192-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/img/favicon/apple-icon-180x180-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "/img/favicon/apple-icon-152x152-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "/img/favicon/apple-icon-144x144-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "/img/favicon/apple-icon-120x120-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "120x120"
+		},
+		{
+			"src": "/img/favicon/apple-icon-114x114-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "114x114"
+		},
+		{
+			"src": "/img/favicon/favicon-96x96-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "/img/favicon/apple-icon-76x76-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "76x76"
+		},
+		{
+			"src": "/img/favicon/apple-icon-72x72-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "/img/favicon/apple-icon-60x60-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "60x60"
+		},
+		{
+			"src": "/img/favicon/apple-icon-57x57-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "57x57"
+		},
+		{
+			"src": "/img/favicon/favicon-32x32-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "/img/favicon/favicon-16x16-dunplab-808.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		}
+	],
+	"prefer_related_applications": false
 }
