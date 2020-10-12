@@ -1,7 +1,7 @@
 {
-  "name": "yago-lopez-personal-portfolio",
+  "name": "yago-lopez-personal-website",
   "version": "1.0.0",
-  "description": "Yago Lopez. Website and Personal Portfolio",
+  "description": "Yago Lopez. Personal Website",
   "main": "index.html",
   "dependencies": {
     "pwa-asset-generator": "^3.2.2"
@@ -17,19 +17,11 @@
     "url": "git+https://github.com/YagoLopez/yagolopez.github.io.git"
   },
   "keywords": [
-    "yago",
-    "lopez",
-    "curriculum",
-    "vitae",
-    "curriculum",
-    "vitae",
+    "yago lopez",
+    "sitio web personal",
     "portfolio",
-    "software",
-    "engineer",
-    "senior",
-    "engineer",
-    "yago",
-    "lopez"
+    "software engineer",
+    "senior engineer"
   ],
   "author": "Yago Lopez",
   "license": "MIT",
