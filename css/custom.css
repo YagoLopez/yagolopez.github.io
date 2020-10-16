@@ -16,8 +16,8 @@
 .container-manifest {
   width: 65%;
 }
-.metaphasejs-img {
-  width: 100px; background: rgba(239,239,251,0.83); padding: 25px
+.project-image {
+  width: 100px; background: rgba(239,239,251,0.83); padding: 25px;
 }
 .manifest-title {
   margin-bottom: 0;

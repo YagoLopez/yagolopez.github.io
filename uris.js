@@ -58,6 +58,8 @@ var URIS_TO_CACHE = [
   '/img/screens/vrview/vrview-screenshot.png',
   '/img/screens/wca/bckgrnd-small.jpg',
   '/img/screens/vue-practice/vue-practice-screenshot.png',
+  '/img/screens/pizza-puzzle/pizza-puzzle-screenshot.png',
+  '/img/screens/address-book/address-book-screenshot.png',
   '/img/theme/js-org-logo.png',
   '/browserstack-logo.png',
   '/img/favicon/apple-icon-144x144-dunplab-808.png',
