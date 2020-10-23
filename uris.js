@@ -72,5 +72,6 @@ var URIS_TO_CACHE = [
   '/img/titulos/anti-money-laundering.png',
   '/img/titulos/responsible-gaming.png',
   '/img/titulos/security-awarness.png',
-  '/img/titulos/phishing-special.png'
+  '/img/titulos/phishing-special.png',
+  '/img/titulos/free-pmp.jpg'
 ];
