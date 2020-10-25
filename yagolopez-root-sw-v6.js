@@ -6,7 +6,7 @@ if( 'undefined' === typeof window){
   importScripts('uris.js');
 }
 
-var CACHE_NAME = 'yagolopez-root-sw-v5';
+var CACHE_NAME = 'yagolopez-root-sw-v6';
 
 // Urls containing strings in whitelist will be bypassed by the service worker. They wont be served by the SW.
 var WHITE_LIST = ['wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'googleapis'];
@@ -15,7 +15,7 @@ var WHITE_LIST = ['wewebcams', 'openweathermap', 'meteociel', 'meteogram', 'goog
  * Service worker registration
  */
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('yagolopez-root-sw-v5.js', {scope: '/'}).then(function(registration) {
+  navigator.serviceWorker.register('yagolopez-root-sw-v6.js', {scope: '/'}).then(function(registration) {
     // console.log('sw: registration ok, scope: ', registration.scope);
   }).catch(function(err) {
     console.error(err);
