@@ -73,5 +73,11 @@ var URIS_TO_CACHE = [
   '/img/titulos/responsible-gaming.png',
   '/img/titulos/security-awarness.png',
   '/img/titulos/phishing-special.png',
-  '/img/titulos/free-pmp.jpg'
+  '/img/titulos/project-management-certification-free.jpg',
+  '/img/titulos/project-management-certification-udemy.jpg',
+  '/img/titulos/project-management-certification-ureducation.jpg',
+  '/img/badges/jira.jpg',
+  '/img/badges/microsoft-planner.jpg',
+  '/img/badges/microsoft-teams.jpg',
+  '/img/badges/pm-certified.jpg',
 ];
