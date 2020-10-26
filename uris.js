@@ -4,6 +4,7 @@ var URIS_TO_CACHE = [
   'index.html',
   'proyectos.html',
   'titulos.html',
+  'reconocimientos.html',
   'manifiesto.html',
   'contacto.html',
   'contacto-iframe.html',
