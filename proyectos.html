@@ -28,6 +28,12 @@
 
 <body>
 
+<script>
+  function navigateTo(url) {
+        window.open(url, '_blank');
+    }
+</script>
+
 <div class="page-wrapper">
 
   <!-- Menu Container ============================================================================================== -->
@@ -150,8 +156,9 @@
                 <a href="https://github.com/YagoLopez/nextjs-chatbot" target="_blank">
                   Chat with web pages</a></h3>
               <div>
-                <a href="https://nextjs-chatbot-topaz.vercel.app" target="_blank">
-                  Ver on-line</a>&nbsp;&nbsp;<i class="fa fa-github-square color-default"></i></div>
+                <a href="javascript:void(0)" target="_blank" onclick="navigateTo('https://nextjs-chatbot-topaz.vercel.app')">
+                  Ver on-line</a>&nbsp;&nbsp;<i class="fa fa-github-square color-default"></i>
+              </div>
             </div>
             <div class="post-content">
               <p><strong>Permite hacer preguntas sobre los contenidos de una página web y obtener respuestas</strong></p>
