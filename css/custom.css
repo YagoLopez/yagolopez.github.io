@@ -1,24 +1,66 @@
-.header-row {padding-left: 6%}
-.container-row {padding-left: 30px}
-.footer-title {text-align: left !important}
-.bold {font-weight: bold}
-.browserstack-logo {height: 59px; background: #dddddd; padding-left: 5px; padding-right: 5px; border-radius: 4px}
-.js-org-logo {width: 120px; border-radius: 4px}
-.code-logo {font-size: 20px}
-.front-end-content {margin-top: 80px; padding-left: 55px}
-.back-end-content {margin-top: 60px; padding-left: 55px}
-.radius4 {border-radius: 4px}
+.header-row {
+  padding-left: 6%
+}
+
+.container-row {
+  padding-left: 30px
+}
+
+.footer-title {
+  text-align: left !important
+}
+
+.bold {
+  font-weight: bold
+}
+
+.browserstack-logo {
+  height: 59px;
+  background: #dddddd;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px
+}
+
+.js-org-logo {
+  width: 120px;
+  border-radius: 4px
+}
+
+.code-logo {
+  font-size: 20px
+}
+
+.front-end-content {
+  margin-top: 80px;
+  padding-left: 55px
+}
+
+.back-end-content {
+  margin-top: 60px;
+  padding-left: 55px
+}
+
+.radius4 {
+  border-radius: 4px
+}
+
 @media screen and (max-width: 700px) {
   .container-manifest {
     width: 100% !important;
   }
 }
+
 .container-manifest {
   width: 65%;
 }
+
 .project-image {
-  width: 100px; background: rgba(239,239,251,0.83); padding: 25px;
+  width: 100px;
+  background: rgba(239, 239, 251, 0.83);
+  padding: 25px;
 }
+
 .manifest-title {
   margin-bottom: 0;
 }
@@ -26,6 +68,7 @@
 .gray {
   color: grey !important;
 }
+
 .title-manifest {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -40,4 +83,10 @@
   margin-bottom: 2px;
 }
 
-.parallax-background-ai{ background:url(../img/demo/ai-bg.png);}
+.parallax-background-ai {
+  background: url(../img/demo/ai-bg.png);
+}
+
+.text-shadow-dark {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
