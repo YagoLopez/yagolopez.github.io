@@ -6,7 +6,7 @@ var URIS_TO_CACHE = [
   'certifications.html',
   'reconocimientos.html',
   'manifesto.html',
-  'contacto.html',
+  'contact.html',
   'contacto-iframe.html',
   'manifest.json',
   'yagolopez-root-sw-v7.js',
