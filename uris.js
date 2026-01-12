@@ -3,7 +3,7 @@ var URIS_TO_CACHE = [
   // app shell
   'index.html',
   'projects.html',
-  'titulos.html',
+  'certifications.html',
   'reconocimientos.html',
   'manifiesto.html',
   'contacto.html',
