@@ -2,7 +2,7 @@ var URIS_TO_CACHE = [
 
   // app shell
   'index.html',
-  'proyectos.html',
+  'projects.html',
   'titulos.html',
   'reconocimientos.html',
   'manifiesto.html',
